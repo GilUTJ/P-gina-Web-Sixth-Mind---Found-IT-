@@ -78,7 +78,6 @@ export function SolucionSection() {
             {/* Carrusel automático de mockups */}
             <div className="bg-gray-100 rounded-xl p-8 overflow-hidden">
               <div className="text-center mb-6">
-                <h4 className="font-bold text-gray-800 text-xl">Mockups del Sistema</h4>
               </div>
               
               <div className="relative">
