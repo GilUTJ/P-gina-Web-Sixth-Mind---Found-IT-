@@ -64,13 +64,6 @@ export function ClienteSection() {
         <div className="mb-16">
           <div className="text-center mb-8">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">¿Qué es</h2>
-            <div className="flex justify-center mb-6">
-              <img 
-                src="/images/Logotipos/found-it.png" 
-                alt="Found IT!" 
-                className="h-20 md:h-24 object-contain"
-              />
-            </div>
             <div className="w-20 h-1 bg-teal-500 mx-auto"></div>
           </div>
           <div className="bg-white rounded-xl p-10 shadow-lg">

@@ -62,6 +62,18 @@ export function SolucionSection() {
                   <div className="w-2 h-2 bg-teal-600 rounded-full mr-3"></div>
                   Servomotor SG90 para control de acceso
                 </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-teal-600 rounded-full mr-3"></div>
+                  Fuente de alimentación 5V
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-teal-600 rounded-full mr-3"></div>
+                  Cables Dupont
+                </li>
+                <li className="flex items-center">
+                  <div className="w-2 h-2 bg-teal-600 rounded-full mr-3"></div>
+                  Cable USB para conexión
+                </li>
               </ul>
             </div>
             <div className="bg-gray-100 rounded-xl p-8 flex items-center justify-center">

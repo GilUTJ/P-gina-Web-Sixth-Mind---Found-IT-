@@ -12,12 +12,12 @@ const carouselData = [
       data: {
         subtitle: 'Democratizar la tecnología IoT',
         description: 'Desarrollar software que transforme la productividad de nuestros clientes mediante soluciones tecnológicas innovadoras. Actuamos con integridad y compromiso, ofreciendo resultados medibles que fortalecen relaciones de confianza.',
-        points: [
-          'Acceso a tecnología IoT para empresas de todos los tamaños',
-          'Soluciones inteligentes y modulares',
-          'Escalabilidad según las necesidades del negocio',
-          'Impulso al crecimiento y competitividad empresarial'
-        ]
+        // points: [
+        //   'Acceso a tecnología IoT para empresas de todos los tamaños',
+        //   'Soluciones inteligentes y modulares',
+        //   'Escalabilidad según las necesidades del negocio',
+        //   'Impulso al crecimiento y competitividad empresarial'
+        // ]
       }
     }
   },
@@ -30,12 +30,12 @@ const carouselData = [
       data: {
         subtitle: 'Desarrolladores en soluciones IoT',
         description: 'Ser reconocidos por la excelencia y calidad de nuestras soluciones. Aspiramos a consolidarnos como una empresa líder, respaldada por la trazabilidad de nuestros proyectos, resultados comprobables y una cultura de mejora continua.',
-        points: [
-          'Liderazgo en soluciones IoT para gestión de almacenes',
-          'Reconocimiento por innovación y calidad',
-          'Compromiso con la transformación digital',
-          'Enfoque en empresas mexicanas'
-        ]
+        // points: [
+        //   'Liderazgo en soluciones IoT para gestión de almacenes',
+        //   'Reconocimiento por innovación y calidad',
+        //   'Compromiso con la transformación digital',
+        //   'Enfoque en empresas mexicanas'
+        // ]
       }
     }
   },
@@ -107,12 +107,7 @@ export function NosotrosCarousel() {
           <h3 className="text-xl md:text-2xl font-bold mb-4 text-gray-800">{data.subtitle}</h3>
           <p className="text-base text-gray-600 mb-6 leading-relaxed">{data.description}</p>
           <div className="grid md:grid-cols-2 gap-3">
-            {data.points.map((point: string, index: number) => (
-              <div key={index} className="flex items-start space-x-2 text-left">
-                <div className="w-1.5 h-1.5 bg-teal-500 rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-sm text-gray-700">{point}</p>
-              </div>
-            ))}
+            
           </div>
         </div>
       );
