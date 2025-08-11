@@ -67,9 +67,9 @@ export function CostosSection() {
               <div>
                 <h4 className="font-medium text-gray-800 mb-2">Integrantes involucrados:</h4>
                 <ul className="space-y-1 text-sm text-gray-600">
-                  <li>• 3 programadores backend/frontend</li>
-                  <li>• 1 ingeniero en sistemas embebidos</li>
-                  <li>• 1 diseñador UI/UX</li>
+                  <li>• 3 desarrolladores backend/frontend</li>
+                  <li>• 1 desarrollador en IoT</li>
+                  <li>• 1 desarrollador SQL</li>
                 </ul>
               </div>
             </div>
