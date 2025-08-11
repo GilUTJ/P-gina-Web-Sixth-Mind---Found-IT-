@@ -10,37 +10,27 @@ export function EquipoSection() {
     {
       name: 'Avalos Orozco Josué',
       photo: "./images/team/Josue_Orozco.jpeg",
-      role: 'Desarrollador Backend',
-      description: 'Especialista en desarrollo de APIs y sistemas de gestión de bases de datos.',
-      achievements: ['Node.js Expert', 'MongoDB Specialist', 'API Design']
+      role: 'Desarrollador Frontend',
     },
     {
       name: 'López Vázquez Omar',
       photo: "./images/team/Omar_Lopez.jpg",
-      role: 'Desarrollador Frontend',
-      description: 'Experto en React y desarrollo de interfaces de usuario modernas.',
-      achievements: ['React Specialist', 'UI/UX Expert', 'TypeScript Pro']
+      role: 'Desarrollador Backend',
     },
     {
       name: 'Murillo Sánchez Roberto',
       photo: "./images/team/Roberto_Murillo.jpg",
-      role: 'Ingeniero en Sistemas Embebidos',
-      description: 'Especialista en desarrollo de hardware IoT y sistemas embebidos.',
-      achievements: ['ESP32 Expert', 'IoT Protocols', 'Hardware Design']
+      role: 'Lider de proyecto',
     },
     {
       name: 'Pulido Rosas Casandra Paola',
       photo: "./images/team/Cassandra_Pulido.jpeg",
-      role: 'Diseñadora UI/UX',
-      description: 'Especialista en diseño de experiencias de usuario y interfaces intuitivas.',
-      achievements: ['Figma Expert', 'Design Systems', 'User Research']
+      role: 'Diseñadora IoT',
     },
     {
       name: 'Rodríguez Almaraz Gilberto Alejandro',
       photo: "./images/team/Gilberto_Rodriguez.jpg",
-      role: 'Desarrollador Full Stack',
-      description: 'Experto en desarrollo completo de aplicaciones web y móviles.',
-      achievements: ['Full Stack Expert', 'Cloud Services', 'DevOps']
+      role: 'Desarrollador NoSQL',
     },
   ];
 
@@ -95,21 +85,8 @@ export function EquipoSection() {
                 <p className="text-xl text-teal-600 font-medium mb-4">
                   {equipo[currentIndex].role}
                 </p>
-                <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                  {equipo[currentIndex].description}
-                </p>
                 
-                {/* Skills/Achievements */}
-                <div className="flex flex-wrap justify-center gap-3 mb-8">
-                  {equipo[currentIndex].achievements.map((achievement, i) => (
-                    <span 
-                      key={i} 
-                      className="px-4 py-2 bg-teal-100 text-teal-800 rounded-full text-sm font-medium"
-                    >
-                      {achievement}
-                    </span>
-                  ))}
-                </div>
+                
               </div>
             </div>
 

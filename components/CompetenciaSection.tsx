@@ -3,21 +3,11 @@ import { CheckCircle, X, Award, TrendingUp, Shield, Clock, Target, Zap } from 'l
 export function CompetenciaSection() {
   const comparacion = [
     { caracteristica: 'Costo', foundIt: 'Bajo', competencia: 'Alto (licencias)', foundItStatus: 'good', competenciaStatus: 'bad' },
-    { caracteristica: 'Modularidad', foundIt: 'Alta', competencia: 'Limitada', foundItStatus: 'good', competenciaStatus: 'bad' },
     { caracteristica: 'Personalización', foundIt: 'Libre', competencia: 'Restringida', foundItStatus: 'good', competenciaStatus: 'bad' },
     { caracteristica: 'Control de acceso físico', foundIt: 'Sí', competencia: 'No siempre', foundItStatus: 'good', competenciaStatus: 'warning' },
     { caracteristica: 'Pick to Light', foundIt: 'Incluido', competencia: 'Incluido', foundItStatus: 'good', competenciaStatus: 'good' },
     { caracteristica: 'Datos en tiempo real', foundIt: 'Sí', competencia: 'Variable', foundItStatus: 'good', competenciaStatus: 'warning' },
     { caracteristica: 'Escalabilidad', foundIt: 'Sí', competencia: 'Limitada', foundItStatus: 'good', competenciaStatus: 'bad' },
-  ];
-
-  const ventajas = [
-    'Sin licencias propietarias.',
-    'Escalable y modular: adapta el número de estantes, sensores y funciones según necesidades.',
-    'Datos en tiempo real: mayor trazabilidad.',
-    'Control ambiental integrado.',
-    'Ahorro en tiempo operativo y disminución de errores.',
-    'Control de acceso seguro.',
   ];
 
   const beneficios = [
@@ -79,21 +69,6 @@ export function CompetenciaSection() {
                 </tbody>
               </table>
             </div>
-          </div>
-        </div>
-
-        {/* ¿Por qué elegirnos? */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8">¿Por qué elegirnos?</h2>
-          <div className="bg-white rounded-xl p-8 shadow-lg">
-            <ul className="space-y-4">
-              {ventajas.map((ventaja, index) => (
-                <li key={index} className="flex items-start">
-                  <CheckCircle className="h-6 w-6 text-green-600 mr-4 mt-1 flex-shrink-0" />
-                  <span className="text-gray-700 text-lg">{ventaja}</span>
-                </li>
-              ))}
-            </ul>
           </div>
         </div>
 

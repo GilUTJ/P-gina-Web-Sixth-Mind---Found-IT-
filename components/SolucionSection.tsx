@@ -1,4 +1,4 @@
-import { Cpu, Globe, Play, ArrowRight } from 'lucide-react';
+import { Cpu, Globe, ArrowRight } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { useEffect, useState } from 'react';
 
@@ -13,13 +13,6 @@ export function SolucionSection() {
 
     return () => clearInterval(interval);
   }, []);
-  const flujoSteps = [
-    { step: 1, title: 'Entrada de material', description: 'Se registra el material en el sistema' },
-    { step: 2, title: 'Alta en sistema', description: 'El administrador configura usuarios y almacenes' },
-    { step: 3, title: 'LED encendido', description: 'El LED correspondiente se ilumina (Pick to Light)' },
-    { step: 4, title: 'Control ambiental', description: 'Los sensores capturan temperatura y humedad' },
-    { step: 5, title: 'Salida', description: 'Todo queda registrado en tiempo real en MongoDB' },
-  ];
 
   return (
     <section id="solucion" className="min-h-screen bg-gradient-to-br from-teal-50 to-slate-50 py-20">
@@ -144,30 +137,6 @@ export function SolucionSection() {
                   <p className="text-gray-600 text-sm">Registro de entradas y salidas, activación remota del sistema Pick to Light, control de acceso físico.</p>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Proceso de flujo */}
-        <div>
-          <div className="flex items-center mb-8">
-            <Play className="h-8 w-8 text-green-600 mr-4" />
-            <h2 className="text-3xl font-bold text-gray-800">Proceso de flujo</h2>
-          </div>
-          <div className="bg-white rounded-xl p-8 shadow-lg">
-            <div className="grid md:grid-cols-5 gap-4">
-              {flujoSteps.map((step, index) => (
-                <div key={step.step} className="text-center">
-                  <div className="bg-teal-600 text-white rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 font-bold">
-                    {step.step}
-                  </div>
-                  <h4 className="font-bold text-gray-800 mb-2">{step.title}</h4>
-                  <p className="text-gray-600 text-sm">{step.description}</p>
-                  {index < flujoSteps.length - 1 && (
-                    <ArrowRight className="h-6 w-6 text-teal-600 mx-auto mt-4 hidden md:block" />
-                  )}
-                </div>
-              ))}
             </div>
           </div>
         </div>

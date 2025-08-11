@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ChevronLeft, ChevronRight, Target, Eye, Heart, MapPin, Phone } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Target, Eye, Heart, MapPin, Mail } from 'lucide-react';
 import { Button } from './ui/button';
 
 const carouselData = [
@@ -10,13 +10,13 @@ const carouselData = [
     content: {
       type: 'text',
       data: {
-        subtitle: 'Transformar la gestión de almacenes',
-        description: 'Desarrollamos soluciones tecnológicas innovadoras que integran hardware IoT y software inteligente para optimizar la gestión de inventarios y mejorar la eficiencia operacional en almacenes y centros de distribución.',
+        subtitle: 'Democratizar la tecnología IoT',
+        description: 'Desarrollar software que transforme la productividad de nuestros clientes mediante soluciones tecnológicas innovadoras. Actuamos con integridad y compromiso, ofreciendo resultados medibles que fortalecen relaciones de confianza.',
         points: [
-          'Reducir tiempos de búsqueda de productos hasta en un 80%',
-          'Minimizar errores humanos en la gestión de inventarios',
-          'Facilitar la integración con sistemas existentes',
-          'Proporcionar datos en tiempo real para toma de decisiones'
+          'Acceso a tecnología IoT para empresas de todos los tamaños',
+          'Soluciones inteligentes y modulares',
+          'Escalabilidad según las necesidades del negocio',
+          'Impulso al crecimiento y competitividad empresarial'
         ]
       }
     }
@@ -28,13 +28,13 @@ const carouselData = [
     content: {
       type: 'text',
       data: {
-        subtitle: 'Líderes en automatización inteligente',
-        description: 'Ser la empresa líder en México y América Latina en soluciones de automatización inteligente para almacenes, estableciendo el estándar de la industria en tecnología Pick to Light e IoT aplicado a la logística.',
+        subtitle: 'Desarrolladores en soluciones IoT',
+        description: 'Ser reconocidos por la excelencia y calidad de nuestras soluciones. Aspiramos a consolidarnos como una empresa líder, respaldada por la trazabilidad de nuestros proyectos, resultados comprobables y una cultura de mejora continua.',
         points: [
-          'Expandir nuestra presencia a nivel internacional',
-          'Innovar constantemente en tecnología de localización',
-          'Establecer alianzas estratégicas con líderes del sector',
-          'Contribuir a la transformación digital del sector logístico'
+          'Liderazgo en soluciones IoT para gestión de almacenes',
+          'Reconocimiento por innovación y calidad',
+          'Compromiso con la transformación digital',
+          'Enfoque en empresas mexicanas'
         ]
       }
     }
@@ -47,33 +47,33 @@ const carouselData = [
       type: 'values',
       data: [
         {
-          name: 'Innovación',
-          description: 'Buscamos constantemente nuevas formas de resolver problemas complejos con soluciones tecnológicas avanzadas.',
+          name: 'Cabalidad ',
+          description: 'Actuar con rectitud y responsabilidad.',
           color: 'bg-teal-100 text-teal-800'
         },
         {
           name: 'Calidad',
-          description: 'Nos comprometemos a entregar productos y servicios que excedan las expectativas de nuestros clientes.',
+          description: 'Entregar soluciones que superen expectativas.',
           color: 'bg-blue-100 text-blue-800'
         },
         {
-          name: 'Colaboración',
-          description: 'Trabajamos en equipo y fomentamos relaciones sólidas con nuestros clientes y socios comerciales.',
+          name: 'Compromiso ',
+          description: 'Cumplir con lo prometido, siempre.',
           color: 'bg-green-100 text-green-800'
         },
         {
-          name: 'Integridad',
-          description: 'Actuamos con transparencia, honestidad y ética en todas nuestras operaciones y relaciones.',
+          name: 'Constancia ',
+          description: 'Mantener el esfuerzo y la mejora día a día.',
           color: 'bg-purple-100 text-purple-800'
         },
         {
           name: 'Excelencia',
-          description: 'Nos esforzamos por alcanzar los más altos estándares en todo lo que hacemos.',
+          description: 'Buscar lo mejor en cada proyecto',
           color: 'bg-orange-100 text-orange-800'
         },
         {
-          name: 'Responsabilidad',
-          description: 'Asumimos la responsabilidad de nuestras acciones y su impacto en clientes, empleados y sociedad.',
+          name: 'Transparencia ',
+          description: 'Comunicar con claridad y honestidad.',
           color: 'bg-red-100 text-red-800'
         }
       ]
@@ -202,7 +202,7 @@ export function NosotrosCarousel() {
           </div>
           <div className="flex flex-col items-center">
             <div className="flex justify-center items-center mb-2">
-              <Phone className="w-6 h-6 text-teal-600" />
+              <Mail className="w-6 h-6 text-teal-600" />
             </div>
             <h4 className="font-semibold text-gray-800 mb-1 text-sm">Contacto</h4>
             <p className="text-gray-600 text-xs">contacto@sixthmind.mx</p>

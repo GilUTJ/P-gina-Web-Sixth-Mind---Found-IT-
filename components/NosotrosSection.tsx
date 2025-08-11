@@ -28,27 +28,6 @@ export function NosotrosSection() {
         <div className="bg-white rounded-3xl p-12 shadow-2xl">
           <NosotrosCarousel />
         </div>
-        
-        {/* Sección adicional sobre la empresa */}
-        <div className="mt-20 grid md:grid-cols-2 gap-12">
-          <div className="bg-white rounded-2xl p-10 shadow-xl">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Nuestra Misión</h2>
-            <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-              Democratizar la tecnología IoT para que empresas de todos los tamaños puedan acceder 
-              a soluciones inteligentes, modulares y escalables que impulsen su crecimiento y 
-              competitividad en el mercado.
-            </p>
-          </div>
-          
-          <div className="bg-white rounded-2xl p-10 shadow-xl">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Nuestra Visión</h2>
-            <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-              Ser la empresa líder en México en soluciones IoT para gestión de almacenes, 
-              reconocida por nuestra innovación, calidad y compromiso con la transformación 
-              digital de las empresas mexicanas.
-            </p>
-          </div>
-        </div>
       </div>
     </section>
   );
