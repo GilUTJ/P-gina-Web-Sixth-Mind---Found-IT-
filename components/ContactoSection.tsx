@@ -1,4 +1,4 @@
-import { Mail, Globe, Phone, MapPin, MessageCircle } from 'lucide-react';
+import { Mail, Globe, MapPin, MessageCircle } from 'lucide-react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
@@ -35,13 +35,6 @@ export function ContactoSection() {
                 <a href="https://www.sixthmind.mx" target="_blank" className="text-blue-600 hover:underline">
                   www.sixthmind.mx
                 </a>
-              </div>
-            </div>
-            
-            <div className="flex items-center">
-              <Phone className="h-5 w-5 text-blue-600 mr-3" />
-              <div>
-                <strong>Teléfono / WhatsApp:</strong> (33) 1234 5678
               </div>
             </div>
             

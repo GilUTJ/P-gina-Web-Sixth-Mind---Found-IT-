@@ -173,8 +173,6 @@ export default function App() {
             <a href="https://www.sixthmind.mx" className="hover:text-teal-400 transition-colors">
               www.sixthmind.mx
             </a>
-            <span>|</span>
-            <span>(33) 1234 5678</span>
           </div>
           <div className="mt-4 text-xs text-gray-500">
             © 2025 Sixth Mind. Guadalajara, Jalisco, México.
