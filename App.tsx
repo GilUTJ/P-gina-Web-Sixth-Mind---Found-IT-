@@ -112,18 +112,7 @@ export default function App() {
       
       <SolucionSection />
       
-      {/* Section Separator - Solución to Competencia */}
-      <div className="py-8 bg-gray-100">
-        <div className="flex items-center justify-center">
-          <div className="h-1 bg-gradient-to-r from-transparent via-green-500 to-slate-600 w-full max-w-4xl"></div>
-          <div className="mx-6 px-4 py-2 bg-purple-600 text-white text-sm font-semibold rounded-full shadow-md">
-            COMPETENCIA
-          </div>
-          <div className="h-1 bg-gradient-to-r from-slate-600 via-green-500 to-transparent w-full max-w-4xl"></div>
-        </div>
-      </div>
-      
-      <CompetenciaSection />
+     
       
       {/* Section Separator - Competencia to Costos */}
       <div className="py-8 bg-gray-50">
@@ -137,6 +126,19 @@ export default function App() {
       </div>
       
       <CostosSection />
+
+       {/* Section Separator - Solución to Competencia */}
+      <div className="py-8 bg-gray-100">
+        <div className="flex items-center justify-center">
+          <div className="h-1 bg-gradient-to-r from-transparent via-green-500 to-slate-600 w-full max-w-4xl"></div>
+          <div className="mx-6 px-4 py-2 bg-purple-600 text-white text-sm font-semibold rounded-full shadow-md">
+            COMPETENCIA
+          </div>
+          <div className="h-1 bg-gradient-to-r from-slate-600 via-green-500 to-transparent w-full max-w-4xl"></div>
+        </div>
+      </div>
+      
+      <CompetenciaSection />
       
       {/* Section Separator - Costos to Contacto */}
       <div className="py-8 bg-gray-100">

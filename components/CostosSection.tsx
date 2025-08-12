@@ -1,5 +1,6 @@
 import { DollarSign, Cpu, Code, Headphones, Users, Calendar, Clock } from 'lucide-react';
 
+
 export function CostosSection() {
   return (
     <section id="costos" className="min-h-screen bg-gradient-to-br from-slate-50 to-gray-100 py-20">
@@ -19,21 +20,15 @@ export function CostosSection() {
             <div className="space-y-4">
               <div className="border-b pb-3">
                 <div className="flex justify-between items-center">
-                  <span className="text-gray-700">Costo estimado por estante:</span>
-                  <span className="font-bold text-teal-600">$___ MXN</span>
+                  <span className="text-gray-700">Costo de mano de obra:</span>
+                  <span className="font-bold text-teal-600">$2000 MXN</span>
                 </div>
                 <p className="text-sm text-gray-500 mt-1">(ESP32, LED, sensores, cableado)</p>
               </div>
-              <div className="border-b pb-3">
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-700">Servomotor por punto de acceso:</span>
-                  <span className="font-bold text-teal-600">$__ MXN</span>
-                </div>
-              </div>
               <div>
                 <div className="flex justify-between items-center">
-                  <span className="text-gray-700">Fuente de alimentación y estructura:</span>
-                  <span className="font-bold text-teal-600">$__ MXN</span>
+                  <span className="text-gray-700">Costo por materia prima:</span>
+                  <span className="font-bold text-teal-600">$939 MXN</span>
                 </div>
               </div>
             </div>
@@ -49,19 +44,19 @@ export function CostosSection() {
               <div className="border-b pb-3">
                 <div className="flex justify-between items-center">
                   <span className="text-gray-700">Inversión estimada:</span>
-                  <span className="font-bold text-green-600">$_____ MXN</span>
+                  <span className="font-bold text-green-600">$240.000 MXN</span>
                 </div>
               </div>
               <div className="border-b pb-3">
                 <div className="flex items-center">
                   <Calendar className="h-4 w-4 text-gray-500 mr-2" />
-                  <span className="text-gray-700">Tiempo de desarrollo: ___ meses</span>
+                  <span className="text-gray-700">Tiempo de desarrollo: 3 meses</span>
                 </div>
               </div>
               <div className="border-b pb-3">
                 <div className="flex items-center">
                   <Clock className="h-4 w-4 text-gray-500 mr-2" />
-                  <span className="text-gray-700">____ h totales</span>
+                  <span className="text-gray-700"> 496 h totales</span>
                 </div>
               </div>
               <div>
@@ -84,7 +79,7 @@ export function CostosSection() {
             <div className="text-center">
               <div className="bg-slate-50 rounded-lg p-6">
                 <h4 className="font-bold text-slate-600 mb-2">Paquete básico mensual</h4>
-                <div className="text-3xl font-bold text-slate-600 mb-2">$1,500 MXN</div>
+                <div className="text-3xl font-bold text-slate-600 mb-2">$3818.10 MXN</div>
                 <p className="text-sm text-gray-600">Actualizaciones + soporte</p>
                 <span className="inline-block mt-2 text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">
                   (opcional)
@@ -94,33 +89,7 @@ export function CostosSection() {
           </div>
         </div>
 
-        {/* Resumen de inversión */}
-        <div className="mt-12">
-          <div className="bg-gradient-to-r from-slate-700 to-teal-600 text-white rounded-xl p-8 shadow-lg">
-            <div className="text-center">
-              <DollarSign className="h-12 w-12 mx-auto mb-4" />
-              <h3 className="text-2xl font-bold mb-4">Inversión Total Estimada</h3>
-              <p className="text-lg opacity-90 mb-6">
-                Una solución completa, escalable y sin licencias propietarias que transformará 
-                la gestión de tu almacén.
-              </p>
-              <div className="grid md:grid-cols-3 gap-4 text-center">
-                <div className="bg-white/10 rounded-lg p-4">
-                  <div className="text-2xl font-bold">Hardware</div>
-                  <div className="text-sm opacity-80">Por estante/punto</div>
-                </div>
-                <div className="bg-white/10 rounded-lg p-4">
-                  <div className="text-2xl font-bold">Software</div>
-                  <div className="text-sm opacity-80">Desarrollo completo</div>
-                </div>
-                <div className="bg-white/10 rounded-lg p-4">
-                  <div className="text-2xl font-bold">Soporte</div>
-                  <div className="text-sm opacity-80">Mensual opcional</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </section>
   );
