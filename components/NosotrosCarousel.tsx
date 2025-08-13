@@ -10,7 +10,7 @@ const carouselData = [
     content: {
       type: 'text',
       data: {
-        subtitle: 'Democratizar la tecnología IoT',
+        subtitle: 'Tecnología IoT al alcance de todos',
         description: 'Desarrollar software que transforme la productividad de nuestros clientes mediante soluciones tecnológicas innovadoras. Actuamos con integridad y compromiso, ofreciendo resultados medibles que fortalecen relaciones de confianza.',
         // points: [
         //   'Acceso a tecnología IoT para empresas de todos los tamaños',

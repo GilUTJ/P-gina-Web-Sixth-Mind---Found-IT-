@@ -7,12 +7,11 @@ export function Navigation() {
 
   const navItems = [
     { href: '#hero', label: 'Inicio' },
-    { href: '#equipo', label: 'Equipo' },
     { href: '#nosotros', label: 'Nosotros' },
-    { href: '#cliente', label: 'Cliente' },
+    { href: '#cliente', label: 'Producto' },
     { href: '#solucion', label: 'Solución' },
-    { href: '#competencia', label: 'Comparación' },
     { href: '#costos', label: 'Costos' },
+    { href: '#competencia', label: 'Comparación' },
     { href: '#contacto', label: 'Contacto' },
   ];
 
@@ -28,7 +27,7 @@ export function Navigation() {
             <img 
               src="/images/Logotipos/sixthMind.png" 
               alt="Sixth Mind" 
-              className="h-10 w-10 mr-3 object-contain bg-white rounded-full p-1"
+              className="h-12 w-13 mr- object-contain rounded-full p5"
             />
             <div className="text-xl font-bold text-gray-800">Sixth Mind</div>
           </div>

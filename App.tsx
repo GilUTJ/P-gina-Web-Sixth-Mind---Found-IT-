@@ -23,19 +23,13 @@ export default function App() {
             <img 
               src="/images/Logotipos/sixthMind.png" 
               alt="Sixth Mind Logo" 
-              className="h-20 w-20 md:h-24 md:w-24 object-contain rounded-full bg-white/10 p-2"
+              className="h-20 w-20 md:h-24 md:w-24 object-contain rounded-full"
             />
             <div className="w-px h-16 bg-white/30"></div>
-            <img 
-              src="/images/Logotipos/found-it.png" 
-              alt="Found IT! Logo" 
-              className="h-16 md:h-20 object-contain bg-white/10 rounded-lg px-4 py-2"
-            />
-          </div>
-          
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in">
+            <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in">
             Sixth Mind
           </h1>
+          </div>
           <h2 className="text-2xl md:text-4xl font-semibold mb-8 text-teal-200 animate-fade-in">
             Found IT!
           </h2>
@@ -59,19 +53,6 @@ export default function App() {
           </div>
         </div>
       </section>
-
-      {/* Section Separator - Hero to Equipo */}
-      <div className="py-8 bg-gray-100">
-        <div className="flex items-center justify-center">
-          <div className="h-1 bg-gradient-to-r from-transparent via-teal-500 to-slate-600 w-full max-w-4xl"></div>
-          <div className="mx-6 px-4 py-2 bg-teal-600 text-white text-sm font-semibold rounded-full shadow-md">
-            EQUIPO
-          </div>
-          <div className="h-1 bg-gradient-to-r from-slate-600 via-teal-500 to-transparent w-full max-w-4xl"></div>
-        </div>
-      </div>
-
-      <EquipoSection />
       
       {/* Section Separator - Equipo to Nosotros */}
       <div className="py-8 bg-gray-50">
@@ -85,6 +66,19 @@ export default function App() {
       </div>
 
       <NosotrosSection />
+
+       {/* Section Separator - Hero to Equipo */}
+      <div className="py-8 bg-gray-100">
+        <div className="flex items-center justify-center">
+          <div className="h-1 bg-gradient-to-r from-transparent via-teal-500 to-slate-600 w-full max-w-4xl"></div>
+          <div className="mx-6 px-4 py-2 bg-teal-600 text-white text-sm font-semibold rounded-full shadow-md">
+            EQUIPO
+          </div>
+          <div className="h-1 bg-gradient-to-r from-slate-600 via-teal-500 to-transparent w-full max-w-4xl"></div>
+        </div>
+      </div>
+
+      <EquipoSection />
       
       {/* Section Separator - Nosotros to Cliente */}
       <div className="py-8 bg-gray-100">
