@@ -4,15 +4,27 @@ import { useEffect, useState } from 'react';
 
 export function SolucionSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentSlide1, setCurrentSlide1] = useState(0);
 
   // Carrusel automático para mockups
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide(prev => prev === 0 ? 1 : 0);
-    }, 4000); // Cambia cada 4 segundos
+  const totalSlides = 3; // Cambia si tienes más
+  const interval = setInterval(() => {
+    setCurrentSlide(prev => (prev + 1) % totalSlides);
+  }, 3000); // Cambia cada 3 segundos
 
     return () => clearInterval(interval);
   }, []);
+
+  useEffect(() => {
+  const totalSlides = 2; // Cambia si tienes más
+  const interval = setInterval(() => {
+    setCurrentSlide1(prev => (prev + 1) % totalSlides);
+  }, 3000); // Cambia cada 3 segundos
+
+    return () => clearInterval(interval);
+  }, []);
+  
 
   return (
     <section id="solucion" className="min-h-screen bg-gradient-to-br from-teal-50 to-slate-50 py-20">
@@ -76,12 +88,54 @@ export function SolucionSection() {
                 </li>
               </ul>
             </div>
-            <div className="bg-gray-100 rounded-xl p-8 flex items-center justify-center">
-              <ImageWithFallback 
-                src="https://images.unsplash.com/photo-1518335935020-cfd9c2a4e8ad?w=400&h=300&fit=crop" 
-                alt="Dispositivo IoT Hardware" 
-                className="rounded-lg shadow-md"
-              />
+            {/* Carrusel automático de mockups */}
+            <div className="bg-gray-100 rounded-xl p-8 overflow-hidden">
+              <div className="text-center mb-6">
+              </div>
+              
+              <div className="relative">
+                <div 
+                  className="flex transition-transform duration-1000 ease-in-out"
+                  style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+                >
+                  {/* Slide 1 - Mockup Web */}
+                  <div className="min-w-full flex flex-col items-center justify-center">
+                    <h5 className="font-semibold text-gray-700 mb-4">Rack Modelo</h5>
+                    <img 
+                      src="/images/IoT/RACK.jfif" 
+                      alt="Mockup Aplicación Web Found IT!" 
+                      className="rounded-lg shadow-lg max-w-full max-h-80 object-contain"
+                    />
+                  </div>
+                  
+                  {/* Slide 2 - Mockup Móvil */}
+                  <div className="min-w-full flex flex-col items-center justify-center">
+                    <h5 className="font-semibold text-gray-700 mb-4">Sensor de Temperatura y Humedad</h5>
+                    <img 
+                      src="/images/IoT/DHT.jfif" 
+                      alt="Mockup Aplicación Móvil Found IT!" 
+                      className="rounded-lg shadow-lg max-w-full max-h-80 object-contain"
+                    />
+                  </div>
+
+                  {/* Slide 3 - Mockup Móvil */}
+                  <div className="min-w-full flex flex-col items-center justify-center">
+                    <h5 className="font-semibold text-gray-700 mb-4">Sensor de Temperatura y Humedad</h5>
+                    <img 
+                      src="/images/IoT/SERVO.jfif" 
+                      alt="Mockup Aplicación Móvil Found IT!" 
+                      className="rounded-lg shadow-lg max-w-full max-h-80 object-contain"
+                    />
+                  </div>
+                </div>
+                
+                {/* Indicadores de carrusel */}
+                <div className="flex justify-center mt-6 space-x-2">
+                  <div className={`w-3 h-3 rounded-full transition-all duration-300 ${currentSlide === 0 ? 'bg-teal-500' : 'bg-gray-400'}`}></div>
+                  <div className={`w-3 h-3 rounded-full transition-all duration-300 ${currentSlide === 1 ? 'bg-teal-500' : 'bg-gray-400'}`}></div>
+                  <div className={`w-3 h-3 rounded-full transition-all duration-300 ${currentSlide === 2 ? 'bg-teal-500' : 'bg-gray-400'}`}></div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -95,7 +149,7 @@ export function SolucionSection() {
               <div className="relative">
                 <div 
                   className="flex transition-transform duration-1000 ease-in-out"
-                  style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+                  style={{ transform: `translateX(-${currentSlide1 * 100}%)` }}
                 >
                   {/* Slide 1 - Mockup Web */}
                   <div className="min-w-full flex flex-col items-center justify-center">
@@ -120,8 +174,8 @@ export function SolucionSection() {
                 
                 {/* Indicadores de carrusel */}
                 <div className="flex justify-center mt-6 space-x-2">
-                  <div className={`w-3 h-3 rounded-full transition-all duration-300 ${currentSlide === 0 ? 'bg-teal-500' : 'bg-gray-400'}`}></div>
-                  <div className={`w-3 h-3 rounded-full transition-all duration-300 ${currentSlide === 1 ? 'bg-teal-500' : 'bg-gray-400'}`}></div>
+                  <div className={`w-3 h-3 rounded-full transition-all duration-300 ${currentSlide1 === 0 ? 'bg-teal-500' : 'bg-gray-400'}`}></div>
+                  <div className={`w-3 h-3 rounded-full transition-all duration-300 ${currentSlide1 === 1 ? 'bg-teal-500' : 'bg-gray-400'}`}></div>
                 </div>
               </div>
             </div>

@@ -21,15 +21,15 @@ export function CostosSection() {
               <div className="border-b pb-3">
                 <div className="flex justify-between items-center">
                   <span className="text-gray-700">Costo de mano de obra:</span>
-                  <span className="font-bold text-teal-600">$2000 MXN</span>
+                  <span className="font-bold text-teal-600">$200 MXN</span>
                 </div>
-                <p className="text-sm text-gray-500 mt-1">(ESP32, LED, sensores, cableado)</p>
               </div>
               <div>
                 <div className="flex justify-between items-center">
                   <span className="text-gray-700">Costo por materia prima:</span>
                   <span className="font-bold text-teal-600">$1,437 MXN</span>
                 </div>
+                <p className="text-sm text-gray-500 mt-1">(ESP32, LED, sensores, cableado)</p>
               </div>
             </div>
           </div>
@@ -44,7 +44,7 @@ export function CostosSection() {
               <div className="border-b pb-3">
                 <div className="flex justify-between items-center">
                   <span className="text-gray-700">Inversión estimada:</span>
-                  <span className="font-bold text-green-600">$240.000 MXN</span>
+                  <span className="font-bold text-green-600">$1'030,963.54</span>
                 </div>
               </div>
 
@@ -54,7 +54,7 @@ export function CostosSection() {
               <div className="border-b pb-3">
                 <div className="flex items-center">
                   <Clock className="h-4 w-4 text-gray-500 mr-2" />
-                  <span className="text-gray-700"> 496 h totales</span>
+                  <span className="text-gray-700"> 3,242 h totales</span>
                 </div>
               </div>
               <div>
