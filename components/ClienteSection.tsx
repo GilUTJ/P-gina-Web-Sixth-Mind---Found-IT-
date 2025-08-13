@@ -79,31 +79,6 @@ export function ClienteSection() {
         {/* Separador visual */}
         <div className="flex items-center justify-center mb-16">
           <div className="h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent w-full max-w-md"></div>
-          <div className="mx-4 w-3 h-3 bg-orange-500 rounded-full"></div>
-          <div className="h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent w-full max-w-md"></div>
-        </div>
-
-        {/* Potencial cliente */}
-        <div className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-12 text-center">Potencial Cliente</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            {clientes.map((cliente) => (
-              <div key={cliente.name} className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
-                <div className="flex items-center mb-6">
-                  <div className="bg-teal-500 rounded-full p-3 mr-4">
-                    <cliente.icon className="h-8 w-8 text-white" />
-                  </div>
-                  <h3 className="text-lg md:text-xl font-bold text-gray-800">{cliente.name}</h3>
-                </div>
-                <p className="text-lg md:text-xl text-gray-600">{cliente.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Separador visual */}
-        <div className="flex items-center justify-center mb-16">
-          <div className="h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent w-full max-w-md"></div>
           <div className="mx-4 w-3 h-3 bg-red-500 rounded-full"></div>
           <div className="h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent w-full max-w-md"></div>
         </div>
@@ -130,12 +105,39 @@ export function ClienteSection() {
           </div>
         </div>
 
+              {/* Separador visual */}
+        <div className="flex items-center justify-center mb-16">
+          <div className="h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent w-full max-w-md"></div>
+          <div className="mx-4 w-3 h-3 bg-orange-500 rounded-full"></div>
+          <div className="h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent w-full max-w-md"></div>
+        </div>
+
+        {/* Potencial cliente */}
+        <div className="mb-16">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-12 text-center">Potencial Cliente</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            {clientes.map((cliente) => (
+              <div key={cliente.name} className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+                <div className="flex items-center mb-6">
+                  <div className="bg-teal-500 rounded-full p-3 mr-4">
+                    <cliente.icon className="h-8 w-8 text-white" />
+                  </div>
+                  <h3 className="text-lg md:text-xl font-bold text-gray-800">{cliente.name}</h3>
+                </div>
+                <p className="text-lg md:text-xl text-gray-600">{cliente.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Separador visual */}
         <div className="flex items-center justify-center mb-12">
           <div className="h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent w-full max-w-md"></div>
           <div className="mx-4 w-3 h-3 bg-green-500 rounded-full"></div>
           <div className="h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent w-full max-w-md"></div>
         </div>
+
+        
 
         {/* Requerimientos clave */}
         <div className="mb-12">

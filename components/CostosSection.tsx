@@ -91,7 +91,7 @@ export function CostosSection() {
           <div className="bg-gradient-to-r from-slate-700 to-teal-600 text-white rounded-xl p-8 shadow-lg">
             <div className="text-center">
               <h3 className="text-2xl font-bold mb-4">Inversión Total Estimada</h3>
-              <p className="font-bold text-white text-2xl" >$ 3'351,229</p>
+              <p className="font-bold text-white text-2xl" >$ 6,000</p>
             </div>
           </div>
         </div>
