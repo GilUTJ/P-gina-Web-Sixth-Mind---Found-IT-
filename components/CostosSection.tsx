@@ -28,7 +28,7 @@ export function CostosSection() {
               <div>
                 <div className="flex justify-between items-center">
                   <span className="text-gray-700">Costo por materia prima:</span>
-                  <span className="font-bold text-teal-600">$939 MXN</span>
+                  <span className="font-bold text-teal-600">$1,437 MXN</span>
                 </div>
               </div>
             </div>
@@ -47,12 +47,10 @@ export function CostosSection() {
                   <span className="font-bold text-green-600">$240.000 MXN</span>
                 </div>
               </div>
-              <div className="border-b pb-3">
+
                 <div className="flex items-center">
-                  <Calendar className="h-4 w-4 text-gray-500 mr-2" />
-                  <span className="text-gray-700">Tiempo de desarrollo: 3 meses</span>
+                  <span className="text-gray-700">Tiempo de desarrollo:</span>
                 </div>
-              </div>
               <div className="border-b pb-3">
                 <div className="flex items-center">
                   <Clock className="h-4 w-4 text-gray-500 mr-2" />
@@ -74,12 +72,11 @@ export function CostosSection() {
           <div className="bg-white rounded-xl p-8 shadow-lg">
             <div className="flex items-center mb-6">
               <Headphones className="h-8 w-8 text-slate-600 mr-4" />
-              <h2 className="text-2xl font-bold text-gray-800">3. Servicio postventa</h2>
+              <h2 className="text-2xl font-bold text-gray-800">3. Mantenimiento</h2>
             </div>
             <div className="text-center">
               <div className="bg-slate-50 rounded-lg p-6">
-                <h4 className="font-bold text-slate-600 mb-2">Paquete básico mensual</h4>
-                <div className="text-3xl font-bold text-slate-600 mb-2">$3818.10 MXN</div>
+                <div className="text-3xl font-bold text-slate-600 mb-2">$402,075 MXN</div>
                 <p className="text-sm text-gray-600">Actualizaciones + soporte</p>
                 <span className="inline-block mt-2 text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">
                   (opcional)
@@ -89,7 +86,15 @@ export function CostosSection() {
           </div>
         </div>
 
-        
+        {/* Resumen de inversión */}
+        <div className="mt-12">
+          <div className="bg-gradient-to-r from-slate-700 to-teal-600 text-white rounded-xl p-8 shadow-lg">
+            <div className="text-center">
+              <h3 className="text-2xl font-bold mb-4">Inversión Total Estimada</h3>
+              <p className="font-bold text-white text-2xl" >$ 3'351,229</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -112,7 +112,7 @@ export default function App() {
       
       <SolucionSection />
       
-     
+      
       
       {/* Section Separator - Competencia to Costos */}
       <div className="py-8 bg-gray-50">
@@ -127,7 +127,7 @@ export default function App() {
       
       <CostosSection />
 
-       {/* Section Separator - Solución to Competencia */}
+      {/* Section Separator - Solución to Competencia */}
       <div className="py-8 bg-gray-100">
         <div className="flex items-center justify-center">
           <div className="h-1 bg-gradient-to-r from-transparent via-green-500 to-slate-600 w-full max-w-4xl"></div>
