@@ -120,7 +120,7 @@ export function SolucionSection() {
 
                   {/* Slide 3 - Mockup Móvil */}
                   <div className="min-w-full flex flex-col items-center justify-center">
-                    <h5 className="font-semibold text-gray-700 mb-4">Sensor de Temperatura y Humedad</h5>
+                    <h5 className="font-semibold text-gray-700 mb-4">Servomotor con control de acceso</h5>
                     <img 
                       src="/images/IoT/SERVO.jfif" 
                       alt="Mockup Aplicación Móvil Found IT!" 
