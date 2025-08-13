@@ -63,7 +63,7 @@ export function ClienteSection() {
         {/* ¿Qué es Found IT? */}
         <div className="mb-16">
           <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">¿Qué es</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">¿Qué es?</h2>
             <div className="w-20 h-1 bg-teal-500 mx-auto"></div>
           </div>
           <div className="bg-white rounded-xl p-10 shadow-lg">

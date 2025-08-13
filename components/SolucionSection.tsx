@@ -60,31 +60,31 @@ export function SolucionSection() {
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-teal-600 rounded-full mr-3"></div>
-                  ESP32 with WiFi connectivity
+                  ESP32 con conectividad WiFi.
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-teal-600 rounded-full mr-3"></div>
-                  12 LEDs rojos (Pick to Light)
+                  12 LEDs rojos (Pick to Light).
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-teal-600 rounded-full mr-3"></div>
-                  Sensor DHT11 para temperatura/humedad
+                  Sensor DHT11 para temperatura/humedad.
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-teal-600 rounded-full mr-3"></div>
-                  Servomotor SG90 para control de acceso
+                  Servomotor SG90 para control de acceso.
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-teal-600 rounded-full mr-3"></div>
-                  Fuente de alimentación 5V
+                  Fuente de alimentación 5V.
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-teal-600 rounded-full mr-3"></div>
-                  Cables Dupont
+                  Cables Dupont.
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-teal-600 rounded-full mr-3"></div>
-                  Cable USB para conexión
+                  Cable USB para conexión.
                 </li>
               </ul>
             </div>
